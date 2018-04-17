@@ -7,7 +7,7 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="logo page-header__logo">
+        <a class="logo page-header__logo" href="index.html">
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Кнопка</button>
@@ -29,7 +29,7 @@
           </div>
         </nav>
       </div>
-      <h1 class="page-header__h1">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
 
     <main>
@@ -38,79 +38,99 @@
         <p class="data__text data__text--top">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
 
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="item">
-            <label class="item__label" for="item-surname">Фамилия:</label>
-            <input class="item__input" id="item-surname" type="text" name="surname" placeholder="Укажите фамилию *" required>
-          </p>
-          <p class="item">
-            <label class="item__label" for="item-name">Имя:</label>
-            <input id="item-name" type="text" name="name" placeholder="Введите ваше имя *" required>
-          </p>
-          <p class="item">
-            <label class="item__label" for="item-patronymic">Отчество:</label>
-            <input class="item__input" id="item-patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
-          </p>
+          <label class="input">
+            <span class="input__span">Фамилия:</span>
+            <input class="input__input" type="text" name="surname" placeholder="Укажите фамилию *" required>
+          </label>
+          <label class="input">
+            <span class="input__span">Имя:</span>
+            <input class="input__input" type="text" name="name" placeholder="Введите ваше имя *" required>
+          </label>
+          <label class="input">
+            <span class="input__span">Отчество:</span>
+            <input class="input__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+          </label>
 
           <fieldset class="fieldset">
           <legend class="fieldset__legend">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="fieldset__list crazy-list">
-              <li class="crazy-list__item">
-                <input class="visually-hidden fieldset__input fieldset__input--checkbox" id="sharp" type="checkbox" name="sharp" checked>
-                <label class="fieldset__label fieldset__label--list" for="sharp">Сделал селфи с акулой</label>
+            <ul class="fieldset__list">
+              <li class="achievements">
+                <label class="achievements__label">
+                  <span class="achievements__span">Сделал селфи с акулой</span>
+                  <input class="visually-hidden achievements__input achievements__input--checkbox" type="checkbox" name="sharp" checked>
+                </label>
               </li>
-              <li class="crazy-list__item">
-                <input class="visually-hidden fieldset__input fieldset__input--checkbox" id="beach" type="checkbox" name="beach" checked>
-                <label class="fieldset__label fieldset__label--list" for="beach">Обгорел на пляже</label>
+              <li class="achievements">
+                <label class="achievements__label">
+                  <span class="achievements__span">Обгорел на пляже</span>
+                  <input class="visually-hidden achievements__input achievements__input--checkbox" type="checkbox" name="beach" checked>
+                </label>
               </li>
-              <li class="crazy-list__item">
-                <input class="visually-hidden fieldset__input fieldset__input--checkbox" id="chuck" type="checkbox" name="chuck" checked>
-                <label class="fieldset__label fieldset__label--list" for="chuck">Видел Чака Норриса</label>
+              <li class="achievements">
+                <label class="achievements__label">
+                  <span class="achievements__span">Видел Чака Норриса</span>
+                  <input class="visually-hidden achievements__input achievements__input--checkbox" type="checkbox" name="chuck" checked>
+                </label>
               </li>
-              <li class="crazy-list__item">
-                <input class="visually-hidden fieldset__input fieldset__input--checkbox" id="souvenirs" type="checkbox" name="souvenirs">
-                <label class="fieldset__label fieldset__label--list" for="souvenirs">Накупил сувениров</label>
+              <li class="achievements">
+                <label class="achievements__label">
+                  <span class="achievements__span">Накупил сувениров</span>
+                  <input class="visually-hidden achievements__input achievements__input--checkbox" type="checkbox" name="souvenirs">
+                </label>
               </li>
-              <li class="crazy-list__item">
-                <input class="visually-hidden fieldset__input fieldset__input--checkbox" id="tower" type="checkbox" name="tower" checked>
-                <label class="fieldset__label fieldset__label--list" for="tower">Удержал башню</label>
+              <li class="achievements">
+                <label class="achievements__label">
+                  <span class="achievements__span">Удержал башню</span>
+                  <input class="visually-hidden achievements__input achievements__input--checkbox" type="checkbox" name="tower" checked>
+                </label>
               </li>
-              <li class="crazy-list__item">
-                <input class="visually-hidden fieldset__input fieldset__input--checkbox" id="hotel" type="checkbox" name="hotel">
-                <label class="fieldset__label fieldset__label--list" for="hotel">Разгромил отель</label>
+              <li class="achievements">
+                <label class="achievements__label">
+                  <span class="achievements__span">Разгромил отель</span>
+                  <input class="visually-hidden achievements__input achievements__input--checkbox" type="checkbox" name="hotel">
+                </label>
               </li>
             </ul>
           </fieldset>
 
-          <p class="item">
-            <label for="tel">Номер телефона</label>
-            <input id="tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
-          </p>
-          <p class="item">
-            <label for="email">Адрес почты</label>
-            <input id="email" type="email" name="email" placeholder="Введите почту *" required>
-          </p>
+          <label class="input">
+            <span class="input_span">Номер телефона</span>
+            <input class="input_input" type="tel" name="tel" placeholder="Номер, пожалуйста">
+          </label>
+          <label class="input">
+            <span class="input_span">Адрес почты</span>
+            <input class="input_input" type="email" name="email" placeholder="Введите почту *" required>
+          </label>
 
           <fieldset class="fieldset">
-            <legend class="fieldset__legend">С каким приложением<br>путешествовали?</legend>
-             <ul class="fieldset__list app-list">
-                <li class="app-list__item">
-                  <input class="visually-hidden fieldset__input fieldset__input--radio" id="ios" type="radio" name="app-list" value="ios" checked>
-                  <label class="fieldset__label fieldset__label--list" for="ios">Pink для iOS</label>
+            <legend class="fieldset__legend">С каким приложением путешествовали?</legend>
+             <ul class="fieldset__list">
+                <li class="app">
+                  <label class="app__label">
+                    <span class="app__span">Pink для iOS</span>
+                    <input class="visually-hidden app__input app__input--radio" type="radio" name="app" value="ios" checked>
+                  </label>
                 </li>
-                <li class="app-list__item">
-                  <input class="visually-hidden fieldset__input fieldset__input--radio" id="android" type="radio" name="app-list" value="android">
-                  <label class="fieldset__label fieldset__label--list" for="android">Pink на Android</label>
+                <li class="app">
+                  <label class="app__label">
+                    <span class="app__span">Pink на Android</span>
+                    <input class="visually-hidden app__input app__input--radio" type="radio" name="app" value="android">
+                  </label>
                 </li>
-                <li class="app-list__item">
-                  <input class="visually-hidden fieldset__input fieldset__input--radio" id="windows" type="radio" name="app-list" value="windows">
-                  <label class="fieldset__label fieldset__label--list" for="windows">Windows Phone</label>
+                <li class="app">
+                  <label class="app__label">
+                    <span class="app__span">Windows Phone</span>
+                    <input class="visually-hidden app__input app__input--radio" type="radio" name="app" value="windows">
+                  </label>
                 </li>
               </ul>
           </fieldset>
 
-          <p class="item">
-            <label class="label item__label--emotions" for="emotions">Опишите свои эмоции</label>
-            <textarea class="item__textarea" id="emotions" name="emotions" rows="5" cals="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <p class="textarea">
+            <label class="textarea__label">
+              <span class="textarea__span">Опишите свои эмоции</span>
+              <textarea class="item__textarea" name="emotions" rows="5" cals="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+            </label>
           </p>
 
           <button class="item__btn button" type="submit">Отправить форму</button>
@@ -121,7 +141,7 @@
     </main>
 
     <footer class="footer">
-      <a class="logo logo--form">
+      <a class="logo logo__footer" href="index.html" aria-label="Ссылка на главную страницу">
       </a>
 
       <div class="footer__social social">
