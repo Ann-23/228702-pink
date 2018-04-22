@@ -119,8 +119,10 @@
       </section>
 
       <section class="gallery">
-        <div class="gallery__photo image">
-          <a href="#"><img src="http://placehold.it/150x100" alt="winter"></a>
+        <div class="gallery__photo">
+          <a href="#">
+            <img class="gallery__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="winter">
+          </a>
         </div>
         <div class="gallery__tools tool">
           <ul class="tool__list">
@@ -139,8 +141,8 @@
           </div>
         </div>
 
-        <button class="gallery__button button button--send" type="submit">Запостить</button>
-        <button class="gallery__button button button--cancel" type="submit">Отмена</button>
+        <button class="gallery__button button button--round button--send" type="submit">Запостить</button>
+        <button class="gallery__button button button--round button--cancel" type="submit">Отмена</button>
       </section>
     </main>
 
@@ -150,19 +152,19 @@
       <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy" aria-label="Мы в Твиттере"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"aria-label="Мы в Фейсбуке"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в Ютубе</a>
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy" aria-label="Мы в Ютубе"></a>
             </li>
           </ul>
       </div>
 
       <div class="footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
+          <b class="copyright__text">Разработано</b>
           <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
