@@ -1,9 +1,19 @@
 .page-header {
-  min-height: 722px; 
+  width: 100%;
+
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center 95%;
+  background-position: center top;
+  background-size: 100%;
   background-color: @blue-dark;
+}
+
+.page-header__wrapper--bg {
+  min-height: 753px;
+
+  background:
+    url("../img/iphone-hand-mobile@1x.png") ~"calc(50% - 31px)" bottom no-repeat,
+    url("../img/bg-back-mobile@1x.jpg") center bottom no-repeat;
 }
 
 .page-header__title {
@@ -15,6 +25,6 @@
   color: @white;
 }
 
-.page-header__wrapper {
-  min-height: 462px;
+.page-header--photo-bg {
+  min-height: 200px;
 }
