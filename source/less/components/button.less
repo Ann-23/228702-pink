@@ -1,6 +1,7 @@
 .button {
   display: block;
-  max-width: 280px;
+  min-width: 260px;
+  padding: 17px;
 
   font-size: 18px;
   font-weight: 700;
@@ -9,43 +10,29 @@
   text-align: center;
   text-decoration: none;
 
-  border: none;
-}
-
-.button--round {
-  padding: 17px;
-
   background: none;
   border: 2px solid @white;
   border-radius: 50px;
+
+    &.button--green {
+      padding-top: 21px;
+
+
+      background-color: @green;
+      border-radius: 0;
+  }
+
+    &.button--post {
+      margin-bottom: 12px;
+
+      color: @pink;
+
+      border-color: @pink;
+  }
+
+    &.button--cancel {
+      color: @blue-dark-10;
+
+      border-color: @blue-dark-10;
+  }
 }
-
-.button--white {
-  color: @white;
-}
-
-.button--green {
-  width: 260px;
-  padding: 19px;
-
-  background-color: @green;
-}
-
-.button--post {
-  width: 260px;
-  margin-bottom: 12px;
-
-  color: @pink;
-
-  border: 2px solid @pink;
-}
-
-.button--cancel {
-  width: 260px;
-
-  color: @blue-dark-10;
-
-  border: 2px solid @blue-dark-10;
-}
-
-
