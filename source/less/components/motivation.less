@@ -1,5 +1,8 @@
 .motivation__wrapper {
   position: relative;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .motivation__titles {
@@ -49,6 +52,8 @@
 }
 
 .motivation__block {
+  display: flex;
+
   padding-top: 85px;
   padding-bottom: 280px;
 
@@ -69,10 +74,20 @@
 }
 
 .motivation__item {
-  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .motivation__item {
+    align-items: flex-start;
+  }
 }
 
 .motivation__list {
+  display: flex;
+  flex-direction: column;
+
   margin: 0;
   padding: 0;
 
@@ -100,6 +115,12 @@
   text-align: center;
 }
 
+@media (min-width: @tablet-width) {
+  .motivation__description {
+    text-align: inherit;
+  }
+}
+
 .motivation__footer {
   display: none;
 
@@ -110,7 +131,8 @@
 
 @media (min-width: @tablet-width) {
   .motivation__footer {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
 

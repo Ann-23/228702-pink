@@ -14,7 +14,9 @@
               <a class="logo page-header__logo" aria-label="Логотип">
                 <img src="img/logo-pink-white-mobile.svg" width="75px" height="23px" alt="Логотип">
               </a>
-              <button class="main-nav__toggle" type="button"></button>
+              <button class="main-nav__toggle" type="button">
+                <img src="img/icon-menu-cross.svg" width="24px" height="24px" alt="Закрыть">
+              </button>
             </div>
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
@@ -156,16 +158,22 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
         <div class="page-footer__contacts contacts">
-          <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
+          <p class="contacts__text contacts__text--title">Остались вопросы? Свяжитесь с нами!</p>
 
-          <p class="contacts__title">Звоните:</p>
-          <a class="contacts__text contacts__text--link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          <div class="contacts__cell">
+            <p class="contacts__title">Звоните:</p>
+            <a class="contacts__text contacts__text--link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </div>
 
-          <p class="contacts__title">Пишите:</p>
-          <p class="contacts__text contacts__text--link">mail@htmlacademy.ru</p>
+          <div class="contacts__cell contacts__cell--mail">
+            <p class="contacts__title">Пишите:</p>
+            <p class="contacts__text contacts__text--link">mail@htmlacademy.ru</p>
+          </div>
 
-          <p class="contacts__title">Приезжайте в гости:</p>
-          <p class="contacts__text contacts__text--link">ул. Большая Конюшенная, 19/8</p>
+          <div class="contacts__cell contacts__cell--address">
+            <p class="contacts__title">Приезжайте в гости:</p>
+            <p class="contacts__text contacts__text--link">ул. Большая Конюшенная, 19/8</p>
+          </div>
         </div>
       </div>
       <div class="page-footer__map map">

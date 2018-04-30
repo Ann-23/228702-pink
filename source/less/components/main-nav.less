@@ -1,4 +1,7 @@
 .main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+
   background-color: @blue-30;
 
   outline: 2px solid blue;
@@ -8,11 +11,13 @@
   .main-nav__wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
 .main-nav__elements {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
 
   min-height: 30px;
   padding: 19px;
@@ -43,10 +48,6 @@
 }*/
 
 .main-nav__toggle {
-  position: absolute;
-  top: 19px;
-  right: 26px;
-
   width: 27px;
   height: 24px;
 
@@ -69,7 +70,7 @@
   }
 }
 
-.main-nav__toggle::before,
+/*.main-nav__toggle::before,
 .main-nav__toggle::after {
   content: "";
 
@@ -89,4 +90,4 @@
 
 .main-nav__toggle::after {
   transform: rotate(-45deg);
-}
+}*/
