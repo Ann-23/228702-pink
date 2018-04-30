@@ -2,13 +2,52 @@
   background-color: @blue;
 }
 
+@media (min-width: @tablet-width) {
+  .download {
+    background-color: transparent;
+  }
+}
+
 .download__wrapper {
-  padding-top: 26px;
+  padding-top: 26px ;
   padding-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .download__wrapper {
+    position: absolute;
+    bottom: -150px;
+
+    max-width: 310px;
+  }
+}
+
+.download__title {
+  display: none;
+
+  margin: 0;
+
+  padding-bottom: 31px;
+  padding-left: 35px;
+  padding-right: 35px;
+
+  font-size: 40px;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 60px;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .download__title {
+    display: block;
+  }
 }
 
 .download__remark {
   margin: 0;
+  padding: 25px 5px;
 
   font-size: 14px;
   line-height: 24px;
@@ -16,10 +55,12 @@
   text-align: center;
 }
 
-.download__button {
-  margin-bottom: 32px;
+@media (min-width: @tablet-width) {
+  .download__remark {
+    font-size: 18px;
+  }
 }
 
-.download__list {
-  margin-bottom: 25px;
+.download__button {
+  margin-bottom: 32px;
 }

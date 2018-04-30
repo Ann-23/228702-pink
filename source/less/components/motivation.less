@@ -3,7 +3,49 @@
 }
 
 .motivation__titles {
+  padding-top: 30px;
   padding-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .motivation__titles {
+    padding-top: 55px;
+  }
+}
+
+.motivation__text {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 30px;
+  color: @blue-dark;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .motivation__text {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .motivation__text--second-header {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.motivation__text--footer {
+  padding-right: 145px;
+  padding-bottom: 17px;
+
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: @black;
+  text-align: left;
 }
 
 .motivation__block {
@@ -16,19 +58,18 @@
   background-color: @light-grey;
 }
 
-.motivation__item {
-  padding-bottom: 5px;
+@media (min-width: @tablet-width) {
+  .motivation__block {
+    padding-top: 65px;
+    padding-bottom: 40px;
+    padding-left: 310px;
+
+    background-image: none;
+  }
 }
 
-.motivation__text {
-  margin: 0;
-  padding-top: 30px;
-
-  font-size: 24px;
-  font-weight: 100;
-  line-height: 30px;
-  color: @blue-dark;
-  text-align: center;
+.motivation__item {
+  padding-bottom: 5px;
 }
 
 .motivation__list {
@@ -59,8 +100,33 @@
   text-align: center;
 }
 
+.motivation__footer {
+  display: none;
+
+  padding-top: 60px;
+  padding-bottom: 5px;
+  padding-left: 310px;
+}
+
+@media (min-width: @tablet-width) {
+  .motivation__footer {
+    display: block;
+  }
+}
+
+.motivation__description--footer {
+  text-align: left;
+}
+
 .motivation__triangle {
-    position: absolute;
-    top: 210px;
-    right: -20px;
+  position: absolute;
+  top: 210px;
+  right: -20px;
+}
+
+.motivation__link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: @pink;
 }

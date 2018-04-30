@@ -1,5 +1,14 @@
- .main-nav {
+.main-nav__wrapper {
   background-color: @blue-30;
+
+  outline: 2px solid blue;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .main-nav__elements {
@@ -11,7 +20,27 @@
   background-color: @blue-dark;
   border-top: 1px solid #485461;
   border-bottom: 1px solid @black;
+
+  outline: 2px solid pink;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav__elements {
+    padding: 40px 19px 38px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__elements {
+    background-color: transparent;
+  }
+}
+
+/*@media (min-width: @desktop-width) {
+  .main-nav__elements {
+    padding: 40px 19px 38px;
+  }
+}*/
 
 .main-nav__toggle {
   position: absolute;
@@ -25,6 +54,19 @@
   border: 0;
 
   cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    top: 39px;
+  right: 19px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
 }
 
 .main-nav__toggle::before,
