@@ -13,7 +13,9 @@
 @media (min-width: @desktop-width) {
   .site-list {
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    width: 620px;
 
     background-color: transparent;
     border: none;
@@ -24,18 +26,13 @@
   .site-list__item {
     padding-left: 15px;
     padding-right: 15px;
-    margin-right: 50px;
-  }
-
-  .site-list__item:last-child {
-    margin-right: 0;
   }
 }
 
 .site-list__link {
   display: block;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   font-size: 18px;
   font-weight: 700;

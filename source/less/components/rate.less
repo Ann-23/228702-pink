@@ -28,8 +28,16 @@
 @media (min-width: @tablet-width) {
   .rate__wrapper--second-table {
     display: flex;
+    max-width: 560px;
+  }
+}
 
-    max-width: 620px;
+@media (min-width: @tablet-width) {
+  .rate__table {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -61,13 +69,18 @@
 }
 
 .rate__header--no-bg {
-  min-height: 63px;
+  box-sizing: border-box;
+
+  min-height: 80px;
 
   background: none;
   border: none;
 }
 
 .rate__header--second-table {
+  box-sizing: border-box;
+  width: 155px;
+
   border-right: none;
   border-bottom: 2px solid @grey-strong;
 }
@@ -153,6 +166,8 @@
 
 @media (min-width: @tablet-width) {
   .rate__item {
+    box-sizing: border-box;
+
     min-height: 31px;
   }
 }
@@ -163,6 +178,10 @@
 }
 
 .rate__item--second-table {
+  box-sizing: border-box;
+  width: 155px;
+  min-height: 48px;
+
   text-transform: none;
 
   border-right: none;
