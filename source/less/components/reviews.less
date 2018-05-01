@@ -12,12 +12,26 @@
   padding-bottom: 40px;
 }
 
+@media (min-width: @desktop-width) {
+  .reviews__wrapper {
+    padding-top: 190px;
+  }
+}
+
 .reviews__list {
   padding-bottom: 22px;
 }
 
 .reviews__toggles {
+  margin: 0;
+
   text-align: center;
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__toggles {
+    display: none;
+  }
 }
 
 .reviews__triangle {

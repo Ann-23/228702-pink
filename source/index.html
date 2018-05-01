@@ -43,7 +43,7 @@
 
       <section class="download">
         <div class="download__wrapper container">
-          <h2 class="download__title">Взгляните на жизнь иначе!</h2>
+          <h2 class="download__title">Взгляните на&nbsp;жизнь иначе!</h2>
           <a class="download__button button" href="https://www.apple.com/ru/itunes/working-itunes/market/" target="_blank">Скачать приложение</a>
           <ul class="download__list application">
             <li class="application__item">
@@ -89,14 +89,16 @@
             </div>
             <div class="motivation__triangle"></div>
           </div>
-          <div class="motivation__footer container">
-            <h3 class="motivation__text motivation__text--footer">Эффект на&nbsp;24 часа!</h3>
-            <p class="motivation__description motivation__description--footer">Британские ученые провели исследования
-            и доказали, что положительный эффект
-            от использования приложения длится
-            целые сутки!
-            </p>
-            <a class="motivation__link" href="#">Узнать больше об исследовании</a>
+          <div class="motivation__footer">
+            <div class="motivation__footer-wrapper container">
+              <h3 class="motivation__text motivation__text--footer">Эффект на&nbsp;24 часа!</h3>
+              <p class="motivation__description motivation__description--footer">Британские ученые провели исследования
+              и доказали, что положительный эффект
+              от использования приложения длится
+              целые сутки!
+              </p>
+              <a class="motivation__link" href="#">Узнать больше об исследовании</a>
+            </div>
           </div>
         </div>
       </section>
@@ -164,38 +166,119 @@
           </div>
         </div>
 
+        <div class="rate__wrapper rate__wrapper--second-table">
+         <div class="rate__table">
+            <div class="rate__header rate__header--no-bg">
+            </div>
+            <div class="rate__item rate__item--second-table">
+              Розовый фильтр
+            </div>
+            <div class="rate__item rate__item--second-table">
+              Смайлики
+            </div>
+            <div class="rate__item rate__item--second-table">
+              Комментарии
+            </div>
+          </div>
+
+          <div class="rate__table">
+            <div class="rate__header rate__header--first rate__header--second-table ">
+              <p class="rate-header__title">База</p>
+              <p class="rate-header__price">1,99 usd</p>
+            </div>
+            <div class="rate__item rate__item--first rate__item--second-table">
+            </div>
+            <div class="rate__item rate__item--second-table">
+            </div>
+            <div class="rate__item rate__item--second-table">
+            </div>
+          </div>
+
+          <div class="rate__table">
+            <div class="rate__header rate__header--second-table">
+              <span class="rate-header__tape-text">
+                Хит
+              </span>
+              <p class="rate-header__title">Стандарт</p>
+              <p class="rate-header__price">3,99 usd</p>
+            </div>
+            <div class="rate__item rate__item--first rate__item--second-table">
+            </div>
+            <div class="rate__item rate__item--second-table">
+            </div>
+            <div class="rate__item rate__item--second-table">
+            </div>
+          </div>
+
+          <div class="rate__table">
+            <div class="rate__header rate__header--last rate__header--second-table">
+              <p class="rate-header__title">Анлим</p>
+              <p class="rate-header__price">9,99 usd</p>
+            </div>
+            <div class="rate__item rate__item--first">
+            </div>
+            <div class="rate__item">
+            </div>
+            <div class="rate__item">
+            </div>
+          </div>
+        </div>
+
         <div class="rate__toggles controls container">
           <button class="controls__toggle" type="button">1</button>
           <button class="controls__toggle" type="button">2</button>
           <button class="controls__toggle" type="button">3</button>
         </div>
       </section>
-    </main>
 
-    <footer class="page-footer">
-      <div class="page-footer__wrapper container">
-        <div class="page-footer__contacts contacts">
+      <section class="contacts">
+        <div class="contacts__wrapper container">
           <p class="contacts__text contacts__text--title">Остались вопросы? Свяжитесь с нами!</p>
 
-          <div class="contacts__cell">
-            <p class="contacts__title">Звоните:</p>
-            <a class="contacts__text contacts__text--link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          <div class="contacts__intro">
+            <div class="contacts__cell contacts__cell--link">
+              <p class="contacts__title">Звоните:</p>
+              <a class="contacts__text contacts__text--link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </div>
+
+            <div class="contacts__cell contacts__cell--mail">
+              <p class="contacts__title">Пишите:</p>
+              <p class="contacts__text contacts__text--link">mail@htmlacademy.ru</p>
+            </div>
+
+            <div class="contacts__cell contacts__cell--address">
+              <p class="contacts__title">Приезжайте в гости:</p>
+              <p class="contacts__text contacts__text--link">ул. Большая Конюшенная, 19/8</p>
+            </div>
           </div>
 
-          <div class="contacts__cell contacts__cell--mail">
-            <p class="contacts__title">Пишите:</p>
-            <p class="contacts__text contacts__text--link">mail@htmlacademy.ru</p>
-          </div>
-
-          <div class="contacts__cell contacts__cell--address">
-            <p class="contacts__title">Приезжайте в гости:</p>
-            <p class="contacts__text contacts__text--link">ул. Большая Конюшенная, 19/8</p>
+        </div>
+        <div class="contacts__map map">
+          <div class="map__triangle">
           </div>
         </div>
+      </section>
+    </main>
+
+    <footer class="footer footer--index container">
+      <a class="footer__logo logo logo--footer" href="index.html" aria-label="Ссылка на главную страницу"></a>
+
+      <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy" aria-label="Мы в Твиттере"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"aria-label="Мы в Фейсбуке"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy" aria-label="Мы в Ютубе"></a>
+            </li>
+          </ul>
       </div>
-      <div class="page-footer__map map">
-        <div class="map__triangle">
-        </div>
+      <div class="footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
       </div>
     </footer>
   </body>

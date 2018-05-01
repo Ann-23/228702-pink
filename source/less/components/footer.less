@@ -1,0 +1,31 @@
+.footer {
+  padding-top: 42px;
+}
+
+.footer--index {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .footer__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: row;
+}
