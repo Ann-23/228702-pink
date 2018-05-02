@@ -91,3 +91,51 @@
       }
   }
 }
+
+@media (min-width: @desktop-width) {
+    .button {
+      box-sizing: border-box;
+
+      display: block;
+      width: 300px;
+      margin: 0 auto;
+      padding: 17px;
+
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 21px;
+      color: @white;
+      text-align: center;
+      text-decoration: none;
+
+      background: none;
+      border: 2px solid @white;
+      border-radius: 50px;
+
+        &.button--green {
+          min-width: 260px;
+          padding-top: 21px;
+
+
+          background-color: @green;
+          border-radius: 0;
+      }
+
+        &.button--post {
+          min-width: 260px;
+          margin-bottom: 12px;
+
+          color: @pink;
+
+          border-color: @pink;
+      }
+
+        &.button--cancel {
+          min-width: 260px;
+
+          color: @blue-dark-10;
+
+          border-color: @blue-dark-10;
+      }
+  }
+}
