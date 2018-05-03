@@ -48,16 +48,17 @@
       <section class="data">
         <h2 class="visually-hidden">Форма конкурса</h2>
         <p class="data__text data__text--top">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="data__appeal">Пожалуйста, заполните форму ниже:</p>
 
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form__fields container">
+          <div class="form__full-name container">
             <label class="input">
               <span class="input__label">Фамилия:</span>
               <input class="input__control" type="text" name="surname" placeholder="Укажите фамилию *" required>
             </label>
             <label class="input">
               <span class="input__label">Имя:</span>
-              <input class="input__control" type="text" name="name" placeholder="Введите ваше имя *" required>
+              <input class="input__control input__control--name" type="text" name="name" placeholder="Введите ваше имя *" required>
             </label>
             <label class="input">
               <span class="input__label">Отчество:</span>
@@ -65,8 +66,8 @@
             </label>
           </div>
 
-          <div class="form__choice">
-            <fieldset class="fieldset container">
+          <div class="form__checkbox">
+            <fieldset class="fieldset fieldset--checkbox container">
               <legend class="fieldset__legend">Ваши безбашенные достижения в путешествии</legend>
 
               <label class="checkbox">
@@ -101,7 +102,7 @@
             </fieldset>
           </div>
 
-          <div class="form__fields form__fields--second container">
+          <div class="form__contacts container">
             <label class="input">
               <span class="input__label">Номер телефона</span>
               <input class="input__control" type="tel" name="tel" placeholder="Номер, пожалуйста">
@@ -112,8 +113,8 @@
             </label>
           </div>
 
-          <div class="form__choice form__choice--radio">
-            <fieldset class="fieldset">
+          <div class="form__radio">
+            <fieldset class="fieldset fieldset--radio container">
               <legend class="fieldset__legend">С каким приложением путешествовали?</legend>
 
                 <label class="radio">
@@ -133,16 +134,20 @@
             </fieldset>
           </div>
 
-          <div class="form__footer container">
+          <div class="form__textarea container">
             <label class="textarea">
               <p class="textarea__label">Опишите свои эмоции</p>
               <textarea class="textarea__control" name="textarea-emotions" rows="20" cals="20">Можно прям в красках, не стесняясь в выражениях
               </textarea>
             </label>
+          </div>
 
-            <button class="data__button button button--green" type="submit">Отправить форму</button>
-
-            <p class="data__text data__text--bottom"><span class="data__text--star">*</span> &mdash; обязательные поля</p>
+          <div class="form__footer container">
+            <button class="form__button button button--green" type="submit">Отправить форму</button>
+            <p class="form__text">
+              <span class="form__star">*</span>
+               &mdash; обязательные поля
+            </p>
           </div>
         </form>
       </section>

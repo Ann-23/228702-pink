@@ -8,8 +8,18 @@
   border: none;
 }
 
+@media (min-width: @tablet-width) {
+  .fieldset {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 57px;
+
+    border: 2px solid @light-grey;
+  }
+}
+
 .fieldset__legend {
-  padding-bottom: 42px;
+  padding-bottom: 41px;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -21,4 +31,10 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .fieldset__legend {
+    padding-bottom: 0;
+  }
 }

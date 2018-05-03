@@ -18,16 +18,15 @@
   border-radius: 50px;
 
     &.button--green {
-      min-width: 280px;
       padding: 22px;
 
+      text-transform: uppercase;
 
       background-color: @green;
       border-radius: 0;
   }
 
     &.button--post {
-      min-width: 280px;
       margin-bottom: 12px;
 
       color: @pink;
@@ -36,8 +35,6 @@
   }
 
     &.button--cancel {
-      min-width: 280px;
-
       color: @blue-dark-10;
 
       border-color: @blue-dark-10;
@@ -46,31 +43,10 @@
 
 @media (min-width: @tablet-width) {
     .button {
-      box-sizing: border-box;
-
-      display: block;
-      width: 300px;
-      margin: 0 auto;
-      padding: 17px;
-
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 18px;
-      color: @white;
-      text-align: center;
-      text-decoration: none;
-
-      background: none;
-      border: 2px solid @white;
-      border-radius: 50px;
+      margin: 0;
 
         &.button--green {
-          min-width: 260px;
-          padding-top: 21px;
-
-
-          background-color: @green;
-          border-radius: 0;
+          min-width: 280px;
       }
 
         &.button--post {

@@ -18,6 +18,42 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .data__text {
+    padding-top: 93px;
+    padding-right: 125px;
+    padding-left: 125px;
+
+    font-size: 18px;
+
+    &.data__text--bottom {
+      font-size: 14px;
+    }
+  }
+}
+
+.data__appeal {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .data__appeal {
+    display: block;
+
+    margin: 0;
+    padding-bottom: 30px;
+    padding-right: 125px;
+    padding-left: 125px;
+
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    color: @blue-dark;
+    text-align: center;
+  }
+}
+
 .data__text--star {
   color: @pink;
 }
