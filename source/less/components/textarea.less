@@ -1,5 +1,5 @@
 .textarea__label {
-  margin-left: 40px;
+  margin: 0;
 
   font-size: 14px;
   font-weight: 400;
@@ -7,16 +7,22 @@
   line-height: 30px;
   color: @pink;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .textarea__control {
-  max-height: 200px;
-  width: 218px;
-  margin-top: 12px;
-  margin-bottom: 45px;
-  padding: 20px;
+  box-sizing: border-box;
 
-  font-size: 14px;
+  max-height: 200px;
+  min-width: 280px;
+  margin-top: 8px;
+  margin-bottom: 45px;
+  padding-top: 16px;
+  padding-bottom: 30px;
+  padding-right: 10px;
+  padding-left: 18px;
+
+  font-size: 18px;
   font-weight: 400;
   font-style: normal;
   line-height: 30px;
