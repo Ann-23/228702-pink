@@ -29,6 +29,20 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .fieldset {
+
+    &.fieldset--contacts {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &.fieldset--radio {
+      max-width: 431px;
+    }
+  }
+}
+
 .fieldset__legend {
   margin: 0;
   padding-bottom: 41px;

@@ -11,6 +11,10 @@
   color: @blue-dark;
   text-align: center;
 
+  &.data__text--top {
+    display: inline-block;
+  }
+
   &.data__text--bottom {
     padding-top: 34px;
 
@@ -38,12 +42,12 @@
 
 @media (min-width: @tablet-width) {
   .data__appeal {
-    display: block;
+    display: inline-block;
 
     margin: 0;
     padding-bottom: 30px;
-    padding-right: 125px;
-    padding-left: 125px;
+    padding-right: 94px;
+    padding-left: 94px;
 
     font-size: 18px;
     font-weight: 400;
@@ -51,6 +55,20 @@
     line-height: 30px;
     color: @blue-dark;
     text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .data__appeal {
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    color: @blue-dark;
   }
 }
 

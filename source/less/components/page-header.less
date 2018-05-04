@@ -42,6 +42,16 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .page-header__part-one {
+    min-height: 110px;
+
+    &.page-header__part-one--other-pages {
+      min-height: 394px;
+    }
+  }
+}
+
 .page-header__part-two {
   min-height: 270px;
 
@@ -75,6 +85,12 @@
 @media (min-width: @tablet-width) {
   .page-header__wrapper {
     padding-top: 69px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    padding-top: 65px;
   }
 }
 
