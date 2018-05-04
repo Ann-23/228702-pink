@@ -19,6 +19,14 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .input {
+    &.input--contacts {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .input__label {
   margin-left: 22px;
 
@@ -38,6 +46,16 @@
 
     &.input__label--contacts {
       margin-left: 77px;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .input__label {
+    
+    &.input__label--contacts {
+      margin-left: 15px;
       margin-right: 0;
     }
   }
@@ -72,7 +90,22 @@
         padding-top: 17px;
         padding-bottom: 17px;
         padding-left: 17px;
-        padding-right: 61px;
+        padding-right: 63px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .input__control {
+     
+    &.input__control--contacts {
+        width: 374px;
+        margin-bottom: 12px;
+        margin-left: 0;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-left: 17px;
+        padding-right: 63px;
     }
   }
 }

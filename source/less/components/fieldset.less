@@ -47,10 +47,23 @@
     &.fieldset--contacts {
       display: flex;
       flex-direction: row;
+      justify-content: space-evenly;
+      
+      padding-top: 43px;
+      padding-bottom: 14px;
     }
 
     &.fieldset--radio {
       max-width: 431px;
+      padding-top: 57px;
+      padding-bottom: 12px;
+    }
+    
+    &.fieldset--checkbox {
+      flex-wrap: wrap;
+      align-content: space-evenly;
+      
+      max-height: 173px;
     }
   }
 }
@@ -69,44 +82,41 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-
-  &.fieldset__legend--contacts {
-    display: none;
-  }
-
-  &.fieldset__legend--textarea {
-    position: absolute;
-    top: -10px;
-    left: 29%;
-    
-    padding-left: 35px;
-    padding-right: 40px;
-    
-    background-color: @white;
-  }
-  
-  &.fieldset__legend--radio {
-    position: absolute;
-    top: -10px;
-    left: 20%;
-    
-    padding-left: 25px;
-    padding-right: 25px;
-    
-    background-color: @white;
-  }
   
   &.fieldset__legend--checkbox {
     position: absolute;
-    top: -10px;
-    left: 14%;
+    top: -78px;
+    left: 0;
     
-    display: inherit;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &.fieldset__legend--contacts {
+    display: none;
     
     padding-left: 35px;
     padding-right: 35px;
 
     background-color: @white;
+  }
+
+  &.fieldset__legend--textarea {
+    position: absolute;
+    top: -24px;
+    left: 12%;
+    
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  &.fieldset__legend--radio {
+    position: absolute;
+    top: -78px;
+    left: 0;
+    
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -126,5 +136,95 @@
 
       background-color: @white;
     }
+    
+    &.fieldset__legend--radio {
+      position: absolute;
+      top: -10px;
+      left: 21%;
+      
+      padding-left: 21px;
+      padding-right: 30px;
+
+      background-color: @white;
+    }
+    
+    &.fieldset__legend--checkbox {
+      position: absolute;
+      top: -10px;
+      left: 16%;
+      
+      padding-left: 25px;
+      padding-right: 30px;
+
+      background-color: @white;
+    }
+    
+    &.fieldset__legend--textarea {
+      position: absolute;
+      top: -10px;
+      left: 31%;
+      
+      padding-left: 25px;
+      padding-right: 30px;
+
+      background-color: @white;
+    }
   }
 }
+
+@media (min-width: @desktop-width) {
+  .fieldset__legend {
+    padding-bottom: 0;
+
+    &.fieldset__legend--radio {
+      position: absolute;
+      top: -10px;
+      left: 6%;
+      
+      display: inherit;
+      
+      padding-left: 27px;
+      padding-right: 35px;
+
+      background-color: @white;
+    }
+    
+    &.fieldset__legend--contacts {
+      position: absolute;
+      top: -10px;
+      left: 36%;
+      
+      display: inherit;
+      
+      padding-left: 31px;
+      padding-right: 35px;
+
+      background-color: @white;
+    }
+    
+    &.fieldset__legend--checkbox {
+      position: absolute;
+      top: -10px;
+      left: 26%;
+
+      display: inherit;
+
+      padding-left: 39px;
+      padding-right: 35px;
+
+      background-color: @white;
+    }
+    
+    &.fieldset__legend--textarea {
+    position: absolute;
+    top: -10px;
+    left: 36%;
+    
+    padding-left: 38px;
+    padding-right: 40px;
+    
+    background-color: @white;
+  }
+  }
+}
+
