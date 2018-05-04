@@ -1,3 +1,24 @@
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .input {
+
+    &.input--full-name {
+      flex-direction: row;
+      align-items: baseline;
+    }
+
+    &.input--contacts {
+      flex-direction: column-reverse;
+
+      margin-bottom: 29px;
+    }
+  }
+}
+
 .input__label {
   margin-left: 22px;
 
@@ -13,7 +34,12 @@
 @media (min-width: @tablet-width) {
   .input__label {
     margin-left: 0;
-    margin-right: 15px;
+    margin-right: 19px;
+
+    &.input__label--contacts {
+      margin-left: 77px;
+      margin-right: 0;
+    }
   }
 }
 
@@ -25,17 +51,29 @@
   width: 280px;
   min-height: 60px;
   padding: 17px 20px;
+
+  border: 2px solid @light-grey;
 }
 
 @media (min-width: @tablet-width) {
   .input__control {
+    width: 524px;
     margin-top: 0;
     margin-bottom: 55px;
-    width: 524px;
-  }
 
-  .input__control--name {
-    width: 564px;
+      &.input__control--full-name {
+        width: 564px;
+    }
+
+      &.input__control--contacts {
+        width: 504px;
+        margin-bottom: 12px;
+        margin-left: 55px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-left: 17px;
+        padding-right: 61px;
+    }
   }
 }
 

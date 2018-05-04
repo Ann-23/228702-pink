@@ -30,6 +30,8 @@
 @media (min-width: @tablet-width) {
   .form__contacts {
     order: -3;
+
+    padding-top: 58px;
   }
 }
 
@@ -42,6 +44,8 @@
 @media (min-width: @tablet-width) {
   .form__checkbox {
     order: -2;
+
+    padding-top: 32px;
 
     background-color: transparent;
   }
@@ -64,21 +68,31 @@
 }
 
 .form__textarea {
-  padding-top: 34px;
-  padding-bottom: 42px;
+  padding-top: 38px;
 }
 
 @media (min-width: @tablet-width) {
   .form__textarea {
     order: -1;
+
+    padding-top: 55px;
+    padding-bottom: 68px;
   }
 }
 
 .form__footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  padding-bottom: 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__footer {
+    flex-direction: row;
+  }
 }
 
 .form__text {

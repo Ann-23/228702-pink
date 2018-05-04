@@ -52,15 +52,15 @@
 
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form__full-name container">
-            <label class="input">
+            <label class="input input--full-name">
               <span class="input__label">Фамилия:</span>
               <input class="input__control" type="text" name="surname" placeholder="Укажите фамилию *" required>
             </label>
-            <label class="input">
+            <label class="input input--full-name">
               <span class="input__label">Имя:</span>
-              <input class="input__control input__control--name" type="text" name="name" placeholder="Введите ваше имя *" required>
+              <input class="input__control input__control--full-name" type="text" name="name" placeholder="Введите ваше имя *" required>
             </label>
-            <label class="input">
+            <label class="input input--full-name">
               <span class="input__label">Отчество:</span>
               <input class="input__control" type="text" name="patronymic" placeholder="Ну и отчество тоже">
             </label>
@@ -103,14 +103,17 @@
           </div>
 
           <div class="form__contacts container">
-            <label class="input">
-              <span class="input__label">Номер телефона</span>
-              <input class="input__control" type="tel" name="tel" placeholder="Номер, пожалуйста">
-            </label>
-            <label class="input">
-              <span class="input__label">Адрес почты</span>
-              <input class="input__control" type="email" name="email" placeholder="Введите почту *" required>
-            </label>
+            <fieldset class="fieldset fieldset--contacts">
+              <legend class="fieldset__legend fieldset__legend--contacts">Контактная информация</legend>
+                <label class="input input--contacts">
+                  <span class="input__label input__label--contacts">Номер телефона</span>
+                  <input class="input__control input__control--contacts" type="tel" name="tel" placeholder="Номер, пожалуйста">
+                </label>
+                <label class="input input--contacts">
+                  <span class="input__label input__label--contacts">Адрес почты</span>
+                  <input class="input__control input__control--contacts" type="email" name="email" placeholder="Введите почту *" required>
+                </label>
+            </fieldset>
           </div>
 
           <div class="form__radio">
@@ -135,11 +138,13 @@
           </div>
 
           <div class="form__textarea container">
-            <label class="textarea">
-              <p class="textarea__label">Опишите свои эмоции</p>
-              <textarea class="textarea__control" name="textarea-emotions" rows="20" cals="20">Можно прям в красках, не стесняясь в выражениях
-              </textarea>
-            </label>
+            <fieldset class="fieldset fieldset--textarea">
+              <legend class="fieldset__legend fieldset__legend--textarea">Опишите свои эмоции</legend>
+                <label class="textarea">
+                  <textarea class="textarea__control" name="textarea-emotions" rows="20" cals="20">Можно прям в красках, не стесняясь в выражениях
+                  </textarea>
+                </label>
+            </fieldset>
           </div>
 
           <div class="form__footer container">
