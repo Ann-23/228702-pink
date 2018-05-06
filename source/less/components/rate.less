@@ -115,7 +115,10 @@
   box-sizing: border-box;
 
   min-width: 278px;
-  padding: 15px 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 70px;
 
   font-size: 14px;
   font-weight: 400;
@@ -139,11 +142,12 @@
 
     text-transform: inherit;
   }
+}
 
-  .rate__item--hidden {
-    visibility: hidden;
+@media (min-width: @tablet-width) {
+  .rate__cell-text--hidden {
+    display: none;
   }
-
 }
 
 @media (min-width: @desktop-width) {
