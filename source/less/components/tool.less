@@ -4,12 +4,61 @@
   justify-content: space-around;
 
   margin: 0;
+  margin-bottom: 16px;
   padding: 0;
 
   list-style: none;
 }
 
+@media (min-width: @tablet-width) {
+  .tool__list {
+    flex-direction: column;
+
+    width: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tool__list {
+    flex-direction: column;
+
+    width: 48px;
+  }
+}
+
 .tool__item {
   width: 70px;
   height: 70px;
+}
+
+@media (min-width: @tablet-width) {
+  .tool__item {
+    width: 24px;
+    height: 23px;
+    padding-top: 28px;
+    padding-bottom: 22px;
+
+    border-bottom: 1px solid @grey-medium;
+  }
+
+  .tool__item:last-child {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tool__item {
+    width: 48px;
+    height: 44px;
+    padding-top: 17px;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid @grey-medium;
+  }
+
+  .tool__item:last-child {
+    padding-top: 17px;
+    padding-bottom: 7px;
+  }
 }

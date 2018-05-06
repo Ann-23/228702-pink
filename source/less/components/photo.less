@@ -1,12 +1,33 @@
 .photo {
   position: relative;
 
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 @media (min-width: @tablet-width) {
   .photo {
     width: 300px;
+
+    margin-bottom: 18px;
+
+    &.photo--header{
+        width: 100%;
+        margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    width: 300px;
+
+    margin-bottom: 51px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo__wrap {
+    padding-bottom: 50px;
   }
 }
 
@@ -22,8 +43,20 @@
   .photo__item {
     min-height: 300px;
 
+    background-color: @pink;
+
     &.photo__item--panorama {
-      max-height: 137px;
+      min-height: 509px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo__item {
+    min-height: 400px;
+
+    &.photo__item--panorama {
+      min-height: 507px;
     }
   }
 }
@@ -44,7 +77,23 @@
   background-color: @pink;
 }
 
+@media (min-width: @tablet-width) {
+  .photo__title {
+    top: 57px;
+    right: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo__title {
+    top: 54px;
+    right: 42px;
+  }
+}
+
 .photo__comment {
+  box-sizing: border-box;
+
   padding: 20px 22px 17px 17px;
 
   background-color: @light-grey;
@@ -54,7 +103,14 @@
   .photo__comment {
     padding: 25px 27px;
 
-    min-height: 152px;
+    min-height: 157px;
+
+    &.photo__comment--header {
+      position: relative;
+
+      min-height: 80px;
+      padding-bottom: 22px;
+    }
   }
 }
 
@@ -65,15 +121,50 @@
 
 .photo__text {
   margin: 0;
-  padding-bottom: 9px;
 
   font-size: 14px;
 }
 
 .photo__likes {
+  margin: 0;
+  padding-top: 9px;
   padding-left: 32px;
 
   font-size: 12px;
   color: @pink;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .photo__likes {
+    padding-left: 0;
+    padding-top: 10px;
+    padding-right: 155px;
+
+    &.photo__likes--panorama {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+
+        padding: 0;
+        padding-right: 35px;
+    }
+
+    &.photo__likes--other-top {
+      padding-top: 34px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo__likes {
+
+      &.photo__likes--panorama {
+        right: 28px;
+    }
+
+    &.photo__likes--other-top {
+      padding-top: 34px;
+    }
+  }
 }

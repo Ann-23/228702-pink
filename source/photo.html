@@ -38,7 +38,7 @@
           </div>
         </nav>
         <div class="page-header__wrapper container">
-          <h1 class="page-header__title">Фотографии пользователей</h1>
+          <h1 class="page-header__title page-header__title--photo">Фотографии пользователей</h1>
         </div>
       </div>
       <div class="page-header__part-two page-header__part-two--other-pages"></div>
@@ -49,17 +49,17 @@
         <p class="photos__text photos__text-top">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 
         <div class="photos__header">
-          <div class="photo photo__header">
+          <div class="photo photo--header">
             <div class="photo__item photo__item--panorama">
               <span class="photo__title">Панорама дня</span>
               <img src="img/panorama-mobile@1x.jpg" width="320px" height="137px" alt="Панорама дня">
             </div>
             <div class="photo__wrap container">
-              <div class="photo__comment">
+              <div class="photo__comment photo__comment--header">
                 <b class="photo__name">Анна</b>
                 <span class="photo__counter">(5 минут назад)</span>
                 <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <span class="photo__likes">Нравится: 215</span>
+                <p class="photo__likes photo__likes--panorama">Нравится: 215</p>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@
               <b class="photo__name">Левон</b>
               <span class="photo__counter">(5 часов назад)</span>
               <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <span class="photo__likes">Нравится: 356</span>
+              <p class="photo__likes">Нравится: 356</p>
             </div>
           </div>
 
@@ -86,7 +86,7 @@
               <b class="photo__name">Антон</b>
               <span class="photo__counter">(12 часов назад)</span>
               <p class="photo__text">Соседи будут рады!</p>
-              <span class="photo__likes">Нравится: 666</span>
+              <p class="photo__likes photo__likes--other-top">Нравится: 666</p>
             </div>
           </div>
 
@@ -98,7 +98,7 @@
               <b class="photo__name">Борис</b>
               <span class="photo__counter">(20 часов назад)</span>
               <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <span class="photo__likes">Нравится: 215</span>
+              <p class="photo__likes">Нравится: 215</p>
             </div>
           </div>
 
@@ -110,7 +110,7 @@
               <b class="photo__name">Сергей</b>
               <span class="photo__counter">(25 часов назад)</span>
               <p class="photo__text">Самая кубанская в мире!</p>
-              <span class="photo__likes">Нравится: 4</span>
+              <p class="photo__likes photo__likes--other-top">Нравится: 4</p>
             </div>
           </div>
 
@@ -121,7 +121,7 @@
             <div class="photo__comment">
               <b class="photo__name">Максим</b> <span class="photo__counter">(40 часов назад)</span>
               <p class="photo__text">Где снего-то?</p>
-              <span class="photo__likes">Нравится: 150</span>
+              <p class="photo__likes photo__likes--other-top">Нравится: 150</p>
             </div>
           </div>
 
@@ -132,45 +132,64 @@
             <div class="photo__comment">
               <b class="photo__name">Надежда</b> <span class="photo__counter">(45 часов назад)</span>
               <p class="photo__text">Всем GM и взаимные лайки!</p>
-              <span class="photo__likes">Нравится: 2560</span>
+              <p class="photo__likes photo__likes--other-top">Нравится:&nbsp;2560</p>
             </div>
           </div>
         </div>
 
-        <p class="photos__text photos__text--bottom">Затмите их всех! Выкладывайте&nbsp;все,&nbsp;что накопилось&nbsp;в телефоне!</p>
+        <p class="photos__text photos__text--bottom">Затмите их всех! Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось&nbsp;в телефоне!</p>
       </section>
 
       <section class="gallery">
-        <div class="gallery__photo container">
-          <a class="gallery__img" href="#" aria-label="Фото из галереи"></a>
-        </div>
-        <div class="gallery__tools tool container">
-          <ul class="tool__list">
-            <li class="tool__item tool__item--cut">
-            </li>
-            <li class="tool__item tool__item--fill">
-            </li>
-            <li class="tool__item tool__item--light">
-            </li>
-          </ul>
-          <div class="gallery__range control">
-            <div class="control__scale">
-              <div class="control__bar"></div>
-            </div>
-            <div class="control__range-toggle"></div>
+        <div class="gallery__wrapper container">
+          <div class="gallery__photo">
+            <a class="gallery__img" href="#" aria-label="Фото из галереи">
+              <img src="../img/photo-road-mobile@1x.jpg" width="280px" height="375px" alt="Road">
+            </a>
           </div>
-        </div>
-      </section>
-
-      <section class="buttons">
-        <div class="buttons__wrapper container">
-          <button class="buttons__button button button--round button--post" type="submit">Запостить</button>
-          <button class="buttons__button button button--round button--cancel" type="submit">Отмена</button>
+          <div class="gallery__footer">
+            <div class="gallery__tools tool">
+              <ul class="tool__list">
+                <li class="tool__item tool__item--cut">
+                </li>
+                <li class="tool__item tool__item--fill">
+                </li>
+                <li class="tool__item tool__item--light">
+                </li>
+              </ul>
+              <div class="gallery__controls">
+                <div class="gallery__range control">
+                  <div class="control__scale">
+                    <div class="control__bar"></div>
+                  </div>
+                  <div class="control__range-toggle"></div>
+                </div>
+                <div class="gallery__range gallery__range--hidden control">
+                  <div class="control__scale">
+                    <div class="control__bar"></div>
+                  </div>
+                  <div class="control__range-toggle"></div>
+                </div>
+                <div class="gallery__range gallery__range--hidden control">
+                  <div class="control__scale">
+                    <div class="control__bar"></div>
+                  </div>
+                  <div class="control__range-toggle"></div>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <div class="buttons__wrapper">
+                <button class="buttons__button button button--post" type="submit">Запостить</button>
+                <button class="buttons__button button button--cancel" type="submit">Отмена</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer container">
+    <footer class="footer footer--photo container">
       <a class="footer__logo logo logo--footer" href="index.html" aria-label="Ссылка на главную страницу"></a>
 
       <div class="footer__social social">
