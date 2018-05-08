@@ -3,19 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Pink-form</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-header__top">
-        <nav class="main-nav">
-          <div class="main-nav__wrapper">
-            <div class="main-nav__elements">
-              <a class="logo page-header__logo" href="index.html">
-                <img src="img/logo-pink-white-mobile.svg" width="75px" height="23px" alt="Логотип">
-              </a>
-              <button class="main-nav__toggle" type="button"></button>
+    <header class="page-header page-header--bg-other-size">
+      <div class="page-header__part-one page-header__part-one--other-pages">
+        <nav class="main-nav main-nav--opened">
+           <div class="main-nav__elements">
+             <div class="main-nav__wrapper-elements">
+               <a class="logo page-header__logo" href="index.html" aria-label="Логотип">
+                  <img src="img/logo-pink-white-mobile.svg" width="75px" height="23px" alt="Логотип">
+               </a>
+               <button class="main-nav__toggle" type="button">
+               </button>
             </div>
+           </div>
+           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
                 <a class="site-list__link" href="index.html">Главная</a>
@@ -32,36 +36,37 @@
             </ul>
           </div>
         </nav>
+        <div class="page-header__wrapper container">
+          <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
       </div>
-      <div class="page-header__bottom page-header__bottom-bg">
-        <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      </div>
+      <div class="page-header__part-two page-header__part-two--other-pages"></div>
     </header>
 
     <main>
       <section class="data">
         <h2 class="visually-hidden">Форма конкурса</h2>
-        <p class="data__text data__text--top">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <p class="data__text data__text--top">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="data__appeal">Пожалуйста, заполните форму ниже:</span></p>
 
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form__fields container">
-            <label class="input">
+          <div class="form__full-name container">
+            <label class="input input--full-name">
               <span class="input__label">Фамилия:</span>
               <input class="input__control" type="text" name="surname" placeholder="Укажите фамилию *" required>
             </label>
-            <label class="input">
+            <label class="input input--full-name">
               <span class="input__label">Имя:</span>
-              <input class="input__control" type="text" name="name" placeholder="Введите ваше имя *" required>
+              <input class="input__control input__control--full-name" type="text" name="name" placeholder="Введите ваше имя *" required>
             </label>
-            <label class="input">
+            <label class="input input--full-name">
               <span class="input__label">Отчество:</span>
               <input class="input__control" type="text" name="patronymic" placeholder="Ну и отчество тоже">
             </label>
           </div>
 
-          <div class="form__choice">
-            <fieldset class="fieldset container">
-              <legend class="fieldset__legend">Ваши безбашенные достижения в путешествии</legend>
+          <div class="form__checkbox">
+            <div class="fieldset fieldset--checkbox container">
+              <p class="fieldset__legend fieldset__legend--checkbox">Ваши безбашенные достижения в путешествии</p>
 
               <label class="checkbox">
                 <span class="checkbox__label">Сделал селфи с акулой</span>
@@ -92,23 +97,26 @@
                 <span class="checkbox__label">Разгромил отель</span>
                 <input class="visually-hidden checkbox__control checkbox__input--checkbox" type="checkbox" name="hotel">
               </label>
-            </fieldset>
+            </div>
           </div>
 
-          <div class="form__fields container">
-            <label class="input">
-              <span class="input__label">Номер телефона</span>
-              <input class="input__control" type="tel" name="tel" placeholder="Номер, пожалуйста">
-            </label>
-            <label class="input">
-              <span class="input__label">Адрес почты</span>
-              <input class="input__control" type="email" name="email" placeholder="Введите почту *" required>
-            </label>
+          <div class="form__contacts container">
+            <div class="fieldset fieldset--contacts">
+              <p class="fieldset__legend fieldset__legend--contacts">Контактная информация</p>
+                <label class="input input--contacts">
+                  <span class="input__label input__label--contacts">Номер телефона</span>
+                  <input class="input__control input__control--contacts" type="tel" name="tel" placeholder="Номер, пожалуйста">
+                </label>
+                <label class="input input--contacts">
+                  <span class="input__label input__label--contacts">Адрес почты</span>
+                  <input class="input__control input__control--contacts" type="email" name="email" placeholder="Введите почту *" required>
+                </label>
+            </div>
           </div>
 
-          <div class="form__choice">
-            <fieldset class="fieldset">
-              <legend class="fieldset__legend">С каким приложением путешествовали?</legend>
+          <div class="form__radio">
+            <div class="fieldset fieldset--radio container">
+              <p class="fieldset__legend fieldset__legend--radio">С каким приложением путешествовали?</p>
 
                 <label class="radio">
                   <span class="radio__label">Pink для iOS</span>
@@ -124,26 +132,32 @@
                   <span class="radio__label">Windows Phone</span>
                   <input class="visually-hidden radio__control radio__control--radio" type="radio" name="app" value="windows">
                 </label>
-            </fieldset>
+            </div>
+          </div>
+
+          <div class="form__textarea container">
+            <div class="fieldset fieldset--textarea">
+              <legend class="fieldset__legend fieldset__legend--textarea">Опишите свои эмоции</legend>
+                <label class="textarea">
+                  <textarea class="textarea__control" name="textarea-emotions" rows="20" cals="20">Можно прям в красках, не стесняясь в выражениях
+                  </textarea>
+                </label>
+            </div>
           </div>
 
           <div class="form__footer container">
-            <label class="textarea">
-              <span class="textarea__label">Опишите свои эмоции</span>
-              <textarea class="textarea__control" name="emotions" rows="30" cals="20">Можно прям в красках, не стесняясь в выражениях
-              </textarea>
-            </label>
-
-            <button class="data__button button button--green" type="submit">Отправить форму</button>
-
-            <p class="data__text data__text--bottom"><span class="data__text--star">*</span> &mdash; обязательные поля</p>
+            <button class="form__button button button--green" type="submit">Отправить форму</button>
+            <p class="form__text">
+              <span class="form__star">*</span>
+              &mdash; обязательные <span class="form__text-insert">для заполнения</span> поля
+            </p>
           </div>
         </form>
       </section>
     </main>
 
-    <footer class="footer">
-      <a class="logo logo__footer" href="index.html" aria-label="Ссылка на главную страницу"></a>
+    <footer class="footer footer--form container">
+      <a class="footer__logo logo logo--footer" href="index.html" aria-label="Ссылка на главную страницу"></a>
 
       <div class="footer__social social">
         <ul class="social__list">
@@ -159,15 +173,15 @@
         </ul>
       </div>
 
-      <div class="footer__copyright copyright container">
+      <div class="footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на сайт HTML Academy"></a>
       </div>
     </footer>
 
-    <!--Попапы-->
+    <!--Поп
 
-    <div class="pop-up container">
+   <div class="pop-up container">
       <p class="pop-up__message">Что-то пошло не так!</p>
       <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="pop-up__button button button--green" type="submit">Ок</button>
@@ -179,7 +193,7 @@
       <div class="pop-up__button-wrap">
         <button class="pop-up__button button button--green" type="submit">Закрыть</button>
       </div>
-    </div>
+    </div>апы-->
 
   </body>
 </html>

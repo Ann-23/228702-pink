@@ -1,6 +1,9 @@
 .button {
+  box-sizing: border-box;
+
   display: block;
-  min-width: 260px;
+  width: 280px;
+  margin: 0 auto;
   padding: 17px;
 
   font-size: 18px;
@@ -15,8 +18,9 @@
   border-radius: 50px;
 
     &.button--green {
-      padding-top: 21px;
+      padding: 22px;
 
+      text-transform: uppercase;
 
       background-color: @green;
       border-radius: 0;
@@ -34,5 +38,91 @@
       color: @blue-dark-10;
 
       border-color: @blue-dark-10;
+  }
+}
+
+@media (min-width: @tablet-width) {
+    .button {
+      width: 300px;
+      margin: 0;
+
+        &.button--green {
+          width: 303px;
+      }
+
+        &.button--post {
+          width: 260px;
+          margin-bottom: 24px;
+
+          color: @pink;
+
+          border-color: @pink;
+      }
+
+        &.button--cancel {
+          width: 260px;
+
+          color: @blue-dark-10;
+
+          border-color: @blue-dark-10;
+      }
+  }
+}
+
+@media (min-width: @desktop-width) {
+    .button {
+      box-sizing: border-box;
+
+      display: block;
+      width: 300px;
+      margin: 0 auto;
+      padding: 17px;
+
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 21px;
+      color: @white;
+      text-align: center;
+      text-decoration: none;
+
+      background: none;
+      border: 2px solid @white;
+      border-radius: 50px;
+
+        &.button--green {
+          width: 303px;
+          padding: 18px;
+          margin: 0;
+
+          font-size: 18px;
+          line-height: 30px;
+
+          background-color: @green;
+          border-radius: 0;
+      }
+
+        &.button--post {
+          width: 185px;
+          margin: 0;
+          padding: 17px 10px;
+
+          font-size: 18px;
+          line-height: 18px;
+          color: @pink;
+
+          border-color: @pink;
+      }
+
+        &.button--cancel {
+          width: 185px;
+          margin: 0;
+          padding: 17px 10px;
+
+          font-size: 18px;
+          line-height: 18px;
+          color: @blue-dark-10;
+
+          border-color: @blue-dark-10;
+      }
   }
 }

@@ -1,39 +1,102 @@
 .page-header {
-  position: relative;
-
   width: 100%;
 
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100% 325px;
-  background-color: @blue-dark;
+  background:
+    url("../img/iphone-hand-mobile@1x.png") ~"calc(50% - 31px)" 435px no-repeat,
+    url("../img/bg-back-mobile@1x.jpg") center 48% no-repeat @blue-dark;
+
+  &.page-header--bg-other-size {
+    background:
+        url("../img/bg-back-mobile@1x.jpg") center 832% no-repeat @blue-dark;
+    background-size: 100%;
+  }
 }
 
-.page-header__top {
-  position: absolute;
-
-  width: 100%;
-  top: 0;
-  left: 0;
+@media (min-width: @tablet-width) {
+  .page-header {
+    background: @blue-dark;
+  }
 }
 
-.page-header__bottom {
-  min-height: 760px;
-
-  background: url("../img/iphone-hand-mobile@1x.png") ~"calc(50% - 31px)" bottom no-repeat,
-    url("../img/bg-back-mobile@1x.jpg") center bottom no-repeat;
+@media (min-width: @desktop-width) {
+  .page-header {
+    background: @blue-dark;
+  }
 }
 
-.page-header__bottom-bg {
-  min-height: 515px;
+.page-header__part-one {
+  min-height: 722px;
 
-  background: url("../img/bg-back-mobile@1x.jpg") center 515% no-repeat;
+  &.page-header__part-one--other-pages {
+    min-height: 496px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__part-one {
+    min-height: 110px;
+
+    &.page-header__part-one--other-pages {
+      min-height: 695px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__part-one {
+    min-height: 110px;
+
+    &.page-header__part-one--other-pages {
+      min-height: 394px;
+    }
+  }
+}
+
+.page-header__part-two {
+  min-height: 270px;
+
+  background-color: @blue;
+
+  &.page-header__part-two--other-pages {
+    min-height: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__part-two {
+    min-height: 618px;
+
+    background-color: transparent;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__part-two {
+    min-height: 743px;
+
+    background-color: transparent;
+  }
+}
+
+.page-header__wrapper {
+  padding-top: 28px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    padding-top: 69px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    padding-top: 65px;
+  }
 }
 
 .page-header__title {
   margin: 0;
-  padding: 365px 39px 25px;
+  padding-bottom: 10px;
 
   font-size: 24px;
   font-weight: 100;
@@ -42,3 +105,23 @@
   color: #ffffff;
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .page-header__title {
+    padding-bottom: 10px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__title {
+
+      &.page-header__title--photo {
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+  }
+}
+

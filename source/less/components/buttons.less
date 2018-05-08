@@ -1,8 +1,26 @@
 .buttons {
   padding-top: 38px;
-  padding-bottom: 42px;
-
-  background-color: @light-grey;
 
   border-top: 2px solid @grey-medium;
 }
+
+@media (min-width: @tablet-width) {
+  .buttons {
+    padding-top: 50px;
+    border-top: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .buttons {
+    padding-top: 128px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .buttons__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+

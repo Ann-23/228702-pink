@@ -1,6 +1,18 @@
 .social__list {
+  display: flex;
+  flex-direction: row;
+
+  min-width: 200px;
+  min-height: 60px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    display: flex;
+    flex-direction: row;
+  }
 }
