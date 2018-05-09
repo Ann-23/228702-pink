@@ -1,14 +1,14 @@
 .control {
   min-height: 24px;
-  margin-bottom: 22px;
+  margin-bottom: 11px;
 }
 
 @media (min-width: @tablet-width) {
   .control {
-    width: 203px;
+    width: 200px;
     margin: 0;
-    padding-top: 25px;
-    padding-bottom: 24px;
+    padding-top: 37px;
+    padding-bottom: 12px;
     padding-left: 28px;
     padding-right: 20px;
 
@@ -16,25 +16,91 @@
   }
 
   .control:last-child {
-    padding-top: 25px;
-    padding-bottom: 19px;
+    padding-top: 32px;
+    padding-bottom: 12px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .control {
-    width: 314px;
-    margin: 0;
-    padding-top: 25px;
-    padding-bottom: 24px;
-    padding-left: 28px;
-    padding-right: 20px;
-
-    border-bottom: 1px solid @grey-medium;
+    width: 298px;
+    padding-top: 38px;
+    padding-bottom: 11px;
+    padding-left: 45px;
   }
 
   .control:last-child {
-    padding-top: 25px;
-    padding-bottom: 19px;
+    padding-top: 33px;
+    padding-bottom: 11px;
+  }
+}
+
+.control__scale {
+  height: 2px;
+  width: 240px;
+  margin-left: 20px;
+  margin-right: 20px;
+     
+  background-color: @blue-dark;
+}
+
+@media (min-width: @tablet-width) {
+  .control__scale {
+    width: 200px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .control__scale {
+    width: 287px;
+  }
+}
+
+.control__range-toggle {
+  position: absolute;
+  top: -6px;
+  right: 53px;
+  
+  width: 10px;
+  height: 10px;
+  
+  background-color: @light-grey;
+  border: 2px solid @pink;
+  border-radius: 50%;
+  
+  cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .control__range-toggle {
+    top: 31px;
+    right: 58px;
+    
+      &.control__range-toggle--middle {
+      top: 30px;
+      right: 179px;
+    }
+    
+    &.control__range-toggle--last {
+      top: 26px;
+      right: 108px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .control__range-toggle {
+    right: 234px;
+    
+      &.control__range-toggle--middle {
+      top: 30px;
+      right: 58px;
+    }
+    
+    &.control__range-toggle--last {
+      top: 26px;
+      right: 145px;
+    }
   }
 }

@@ -144,13 +144,26 @@
                 </label>
             </div>
           </div>
-
           <div class="form__footer container">
             <button class="form__button button button--green" type="submit">Отправить форму</button>
             <p class="form__text">
               <span class="form__star">*</span>
               &mdash; обязательные <span class="form__text-insert">для заполнения</span> поля
             </p>
+          </div>
+          <div class="pop-up pop-up--not-done pop-up--show">
+            <p class="pop-up__message pop-up__message--not-done">Что-то пошло не так!</p>
+            <p class="pop-up__text pop-up__text--not-done">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <div class="pop-up__button-wrapper pop-up__button-wrapper--not-done">
+              <button class="pop-up__button button button--green" type="submit">Ок</button>
+            </div>
+          </div>
+          <div class="pop-up pop-up--show pop-up--done">
+            <p class="pop-up__message">Ваша заявка отправлена</p>
+            <p class="pop-up__text pop-up__text--big">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+            <div class="pop-up__button-wrapper pop-up__button-wrapper--big">
+              <button class="pop-up__button button button--green button--big" type="submit">Закрыть окно</button>
+            </div>
           </div>
         </form>
       </section>
@@ -178,22 +191,5 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на сайт HTML Academy"></a>
       </div>
     </footer>
-
-    <!--Поп
-
-   <div class="pop-up container">
-      <p class="pop-up__message">Что-то пошло не так!</p>
-      <p class="pop-up__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="pop-up__button button button--green" type="submit">Ок</button>
-    </div>
-
-    <div class="pop-up container">
-      <p class="pop-up__message">Ваша заявка отправлена</p>
-      <p class="pop-up__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-      <div class="pop-up__button-wrap">
-        <button class="pop-up__button button button--green" type="submit">Закрыть</button>
-      </div>
-    </div>апы-->
-
   </body>
 </html>
