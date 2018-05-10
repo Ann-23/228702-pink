@@ -1,4 +1,6 @@
 .gallery {
+  position: relative;
+  
   padding-bottom: 36px;
 
   background-color: @light-grey;
@@ -36,7 +38,7 @@
 @media (min-width: @desktop-width) {
   .gallery__wrapper {
     padding-top: 39px;
-    padding-bottom: 53px;
+    padding-bottom: 56px;
 
     background-color: @light-grey;
   }
@@ -93,6 +95,7 @@
 }
 
 .gallery__range {
+  position: relative;
 
   &.gallery__range--hidden {
     display: none;
@@ -105,5 +108,20 @@
     &.gallery__range--hidden {
       display: block;
     }
+  }
+}
+
+.gallery__line {
+  position: absolute;
+  bottom: 26%;
+    
+  height: 1px;
+  width: 100%;
+  background-color: @grey-medium;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__line {
+    display: none;
   }
 }

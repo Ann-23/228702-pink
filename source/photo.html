@@ -7,35 +7,37 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header page-header--bg-other-size">
-      <div class="page-header__part-one page-header__part-one--other-pages">
-        <nav class="main-nav main-nav--opened">
-          <div class="main-nav__elements">
-            <div class="main-nav__wrapper-elements">
-              <a class="logo page-header__logo" href="index.html" aria-label="Логотип">
-                <img src="img/logo-pink-white-mobile.svg" width="75px" height="23px" alt="Логотип">
-              </a>
-              <button class="main-nav__toggle" type="button">
-              </button>
+    <header class="page-header page-header--nojs page-header--bg-other-size">
+      <div class="page-header__part-one page-header__part-one--nojs page-header__part-one--other-pages">
+        <div class="page-header__top">
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <div class="main-nav__elements">
+              <div class="main-nav__wrapper-elements">
+                <a class="logo page-header__logo" href="index.html" aria-label="Логотип">
+                  <img src="img/logo-pink-white-mobile.svg" width="75px" height="23px" alt="Логотип">
+                </a>
+                <button class="main-nav__toggle" type="button">
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link" href="index.html">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link site-list__link--active">Фотографии</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                  <a class="site-list__link" href="index.html">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link site-list__link--active">Фотографии</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="form.html">Конкурс</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
         <div class="page-header__wrapper container">
           <h1 class="page-header__title page-header__title--photo">Фотографии пользователей</h1>
         </div>
@@ -158,22 +160,16 @@
               </ul>
               <div class="gallery__controls">
                 <div class="gallery__range control">
-                  <div class="control__scale">
-                    <div class="control__bar"></div>
-                  </div>
+                  <div class="control__scale"></div>
                   <div class="control__range-toggle"></div>
                 </div>
                 <div class="gallery__range gallery__range--hidden control">
-                  <div class="control__scale">
-                    <div class="control__bar"></div>
-                  </div>
-                  <div class="control__range-toggle"></div>
+                  <div class="control__scale"></div>
+                  <div class="control__range-toggle control__range-toggle--middle"></div>
                 </div>
                 <div class="gallery__range gallery__range--hidden control">
-                  <div class="control__scale">
-                    <div class="control__bar"></div>
-                  </div>
-                  <div class="control__range-toggle"></div>
+                  <div class="control__scale"></div>
+                  <div class="control__range-toggle control__range-toggle--last"></div>
                 </div>
               </div>
             </div>
@@ -185,6 +181,7 @@
             </div>
           </div>
         </div>
+        <div class="gallery__line"></div>
       </section>
     </main>
 
@@ -192,23 +189,24 @@
       <a class="footer__logo logo logo--footer" href="index.html" aria-label="Ссылка на главную страницу"></a>
 
       <div class="footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy" aria-label="Мы в Твиттере"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"aria-label="Мы в Фейсбуке"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy" aria-label="Мы в Ютубе"></a>
-            </li>
-          </ul>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy" aria-label="Мы в Твиттере"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"aria-label="Мы в Фейсбуке"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy" aria-label="Мы в Ютубе"></a>
+          </li>
+        </ul>
       </div>
 
       <div class="footer__copyright copyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
       </div>
     </footer>
+    <script src="js/js.js"></script>
   </body>
 </html>
