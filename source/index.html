@@ -13,8 +13,12 @@
           <nav class="main-nav main-nav--closed main-nav--nojs">
             <div class="main-nav__elements">
               <div class="main-nav__wrapper-elements">
-                <a class="logo page-header__logo" aria-label="Логотип">
-                  <img src="img/logo-pink-white-mobile.svg" width="75px" height="23px" alt="Логотип">
+                <a class="page-header__link logo" aria-label="Логотип">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                    <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                    <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип">
+                  </picture>
                 </a>
                 <button class="main-nav__toggle" type="button">
                   <span class="visually-hidden">Кнопка открыть-закрыть меню</span>
@@ -217,7 +221,7 @@
       <a class="footer__logo logo logo--footer" href="index.html" aria-label="Ссылка на главную страницу"></a>
 
       <div class="footer__social social">
-          <ul class="social__list">
+        <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy" aria-label="Мы в Твиттере"></a>
             </li>
@@ -227,7 +231,7 @@
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy" aria-label="Мы в Ютубе"></a>
             </li>
-          </ul>
+        </ul>
       </div>
       <div class="footer__copyright copyright">
         <p class="copyright__text">Разработано</p>

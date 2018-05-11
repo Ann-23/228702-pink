@@ -1,4 +1,6 @@
 .main-nav {
+  position: relative;
+  
   width: auto;
   margin: 0;
 }
@@ -177,6 +179,11 @@
   
   .main-nav--opened .main-nav__wrapper {
     display: block;
+    
+    position: absolute;
+    top: 71px;
+    
+    width: 100%;
   }
 
   .main-nav--opened .main-nav__elements {
@@ -195,6 +202,8 @@
 
   .main-nav--nojs .main-nav__wrapper {
     display: block;
+    
+    position: static;
   }
   
   .main-nav--nojs .main-nav__elements {
@@ -203,13 +212,18 @@
   }
 }
 
-@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+@media (min-width: @tablet-width) and (max-width: 959px) {
   .main-nav--closed .main-nav__wrapper {
     display: none;
   }
   
   .main-nav--opened .main-nav__wrapper {
     display: block;
+    
+    position: absolute;
+    top: 110px;
+    
+    width: 100%;
   }
   
   .main-nav--opened .main-nav__elements {
@@ -228,6 +242,8 @@
 
   .main-nav--nojs .main-nav__wrapper {
     display: block;
+    
+    position: static;
   }
   
   .main-nav--nojs .main-nav__elements {
