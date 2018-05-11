@@ -13,8 +13,12 @@
           <nav class="main-nav main-nav--closed main-nav--nojs">
             <div class="main-nav__elements">
               <div class="main-nav__wrapper-elements">
-                <a class="logo page-header__logo" href="index.html" aria-label="Логотип">
-                    <img src="img/logo-pink-white-mobile.svg" width="75px" height="23px" alt="Логотип">
+                <a class="page-header__link logo" href="index.html" aria-label="Логотип">
+                    <picture>
+                      <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                      <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                      <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип">
+                  </picture>
                 </a>
                 <button class="main-nav__toggle" type="button">
                 </button>
@@ -192,6 +196,6 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на сайт HTML Academy"></a>
       </div>
     </footer>
-    <script src="js/js.js"></script>
+    
   </body>
 </html>
